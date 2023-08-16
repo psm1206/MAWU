@@ -35,7 +35,7 @@ python run_recbole.py --model=MAWU --dataset=yelp --encoder=LightGCN --weight_de
 ```
 @inproceedings{park2023mawu,
   title={Toward a Better Understanding of Loss Functions for Collaborative Filtering},
-  author={Seongmin Park, Mincheol Yoon, Jae-woong Lee, Hogun Park, Jongwuk Lee},
+  author={Seongmin Park and Mincheol Yoon and Jae-woong Lee and Hogun Park and Jongwuk Lee},
   booktitle={The 32nd ACM International Conference on Information and Knowledge Management (CIKM)},
   year={2023}
 }
