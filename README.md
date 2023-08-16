@@ -1,5 +1,8 @@
 # Toward a Better Understanding of Loss Functions for Collaborative Filtering (CIKM'23)
 
+For more information about our paper, please follow [Toward a Better Understanding of Loss Functions for Collaborative Filtering](https://arxiv.org/abs/2308.06091).
+
+
 ## How to run
 
 ### Set conda environment
@@ -26,4 +29,14 @@ python run_recbole.py --model=MAWU --dataset=gowalla --encoder=MF --weight_decay
 python run_recbole.py --model=MAWU --dataset=gowalla --encoder=LightGCN --weight_decay=1e-6 --gamma1=2.4 --gamma2=1.6 &&
 python run_recbole.py --model=MAWU --dataset=yelp --encoder=MF --weight_decay=1e-6 --gamma1=0.8 --gamma2=0.6 &&
 python run_recbole.py --model=MAWU --dataset=yelp --encoder=LightGCN --weight_decay=1e-6 --gamma1=1.2 --gamma2=0.6
+```
+
+## Citation
+```
+@inproceedings{park2023mawu,
+  title={Toward a Better Understanding of Loss Functions for Collaborative Filtering},
+  author={Seongmin Park, Mincheol Yoon, Jae-woong Lee, Hogun Park, Jongwuk Lee},
+  booktitle={The 32nd ACM International Conference on Information and Knowledge Management (CIKM)},
+  year={2023}
+}
 ```
