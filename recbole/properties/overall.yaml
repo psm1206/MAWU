@@ -1,0 +1,48 @@
+# general
+gpu_id: 0
+use_gpu: True
+seed: 2020
+state: INFO
+reproducibility: True
+data_path: 'dataset/'
+checkpoint_dir: 'saved'
+save_dataset_dir: 'saved/_dataset'
+show_progress: False
+save_dataset: True
+dataset_save_path: ~ # saved/gowalla-dataset.pth
+save_dataloaders: True
+dataloaders_save_path: ~ #'saved/gowalla-for-BPR-dataloader.pth'
+save_pos_pairs: True
+log_wandb: False
+wandb_project: 'cikm2023'
+
+# training settings
+epochs: 1000
+train_batch_size: 2048
+learner: adam
+learning_rate: 0.001
+neg_sampling: 
+  uniform: 10
+  in_batch: False
+eval_step: 1
+stopping_step: 10
+clip_grad_norm: ~
+# clip_grad_norm:  {'max_norm': 5, 'norm_type': 2}
+weight_decay: 0
+loss_decimal_place: 4
+require_pow: False
+
+# evaluation settings~~
+eval_args: 
+  split: {'RS':[0.7,0.1,0.2]}
+  group_by: user
+  order: RO
+  mode: full
+repeatable: False
+# metrics: ["Recall","MRR","NDCG","Hit","Precision"]
+metrics: ["Recall", "NDCG"]
+topk: [5, 10, 20, 50]
+valid_metric: NDCG@20
+valid_metric_bigger: True
+eval_batch_size: 1048576
+metric_decimal_place: 4

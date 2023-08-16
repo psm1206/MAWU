@@ -1,0 +1,6 @@
+embedding_size: 64
+encoder: MF
+neg_sampling: ~
+n_layers: 2
+gamma1: 0.5
+gamma2: 0.5

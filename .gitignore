@@ -1,0 +1,8 @@
+/log/*
+/log_tensorboard/*
+/dataset/*
+/saved/*
+/output_files/*
+
+__pycache__/
+*.py[cod]
