@@ -1,4 +1,29 @@
-# MAWU (CIKM'23)
-This is the official code for the CIKM 2023 paper: 'Toward a Better Understanding of Loss Functions for Collaborative Filtering'.
+# Toward a Better Understanding of Loss Functions for Collaborative Filtering (CIKM'23)
 
-The code will be released soon.
+## How to run
+
+### Set conda environment
+```
+conda env create -f mawu.yaml
+conda activate mawu
+```
+
+### Run codes for DirectAU
+```
+python run_recbole.py --model=DirectAU --dataset=beauty --encoder=MF --weight_decay=1e-4 --gamma=0.4 &&
+python run_recbole.py --model=DirectAU --dataset=beauty --encoder=LightGCN --weight_decay=1e-4 --gamma=0.4 &&
+python run_recbole.py --model=DirectAU --dataset=gowalla --encoder=MF --weight_decay=1e-6 --gamma=2 &&
+python run_recbole.py --model=DirectAU --dataset=gowalla --encoder=LightGCN --weight_decay=1e-6 --gamma=2 &&
+python run_recbole.py --model=DirectAU --dataset=yelp --encoder=MF --weight_decay=1e-6 --gamma=2 &&
+python run_recbole.py --model=DirectAU --dataset=yelp --encoder=LightGCN --weight_decay=1e-6 --gamma=2
+```
+
+### Run codes for MAWU
+```
+python run_recbole.py --model=MAWU --dataset=beauty --encoder=MF --weight_decay=1e-4 --gamma1=1 --gamma2=0.1 &&
+python run_recbole.py --model=MAWU --dataset=beauty --encoder=LightGCN --weight_decay=1e-4 --gamma1=0.9 --gamma2=0.2 &&
+python run_recbole.py --model=MAWU --dataset=gowalla --encoder=MF --weight_decay=1e-6 --gamma1=2.6 --gamma2=1.4 &&
+python run_recbole.py --model=MAWU --dataset=gowalla --encoder=LightGCN --weight_decay=1e-6 --gamma1=2.4 --gamma2=1.6 &&
+python run_recbole.py --model=MAWU --dataset=yelp --encoder=MF --weight_decay=1e-6 --gamma1=0.8 --gamma2=0.6 &&
+python run_recbole.py --model=MAWU --dataset=yelp --encoder=LightGCN --weight_decay=1e-6 --gamma1=1.2 --gamma2=0.6
+```
