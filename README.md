@@ -36,7 +36,11 @@ If you find our work helpful, please cite our paper.
 ```
 @inproceedings{park2023mawu,
   title={Toward a Better Understanding of Loss Functions for Collaborative Filtering},
-  author={Seongmin Park and Mincheol Yoon and Jae-woong Lee and Hogun Park and Jongwuk Lee},
+  author={Seongmin Park and
+          Mincheol Yoon and
+          Jae-woong Lee and
+          Hogun Park and
+          Jongwuk Lee},
   booktitle={The 32nd ACM International Conference on Information and Knowledge Management (CIKM)},
   year={2023}
 }
