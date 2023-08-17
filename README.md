@@ -1,7 +1,7 @@
 # Toward a Better Understanding of Loss Functions for Collaborative Filtering (CIKM'23)
 
 For more information about our paper, please follow [Toward a Better Understanding of Loss Functions for Collaborative Filtering](https://arxiv.org/abs/2308.06091).
-
+This code is implemented on [RecBole](https://github.com/RUCAIBox/RecBole).
 
 ## How to run
 
@@ -32,6 +32,7 @@ python run_recbole.py --model=MAWU --dataset=yelp --encoder=LightGCN --weight_de
 ```
 
 ## Citation
+If you find our work helpful, please cite our paper.
 ```
 @inproceedings{park2023mawu,
   title={Toward a Better Understanding of Loss Functions for Collaborative Filtering},
