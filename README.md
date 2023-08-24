@@ -1,6 +1,6 @@
 # Toward a Better Understanding of Loss Functions for Collaborative Filtering (CIKM'23)
 
-This is the official code for MAWU in the paper "[Toward a Better Understanding of Loss Functions for Collaborative Filtering](https://arxiv.org/abs/2308.06091)". This code is implemented on [RecBole](https://github.com/RUCAIBox/RecBole).
+This is the official code for MAWU in the paper "[Toward a Better Understanding of Loss Functions for Collaborative Filtering](https://arxiv.org/abs/2308.06091)", *The 32nd ACM International Conference on Information and Knowledge Management*. This code is implemented on [RecBole](https://github.com/RUCAIBox/RecBole).
 
 ## How to run
 
