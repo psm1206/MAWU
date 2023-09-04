@@ -2,7 +2,7 @@
 
 This is the official code for MAWU in the paper "[Toward a Better Understanding of Loss Functions for Collaborative Filtering](https://arxiv.org/abs/2308.06091)", *The 32nd ACM International Conference on Information and Knowledge Management*. This code is implemented on [RecBole](https://github.com/RUCAIBox/RecBole).
 
-For more details, please refer to [our lab blog](https://dial.skku.edu/blog/2023_mawu) (in Korean).
+Note that a summary of our paper is on [our lab blog](https://dial.skku.edu/blog/2023_mawu) (in Korean).
 
 ## How to run
 
