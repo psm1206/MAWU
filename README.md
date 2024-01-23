@@ -12,7 +12,7 @@ conda env create -f mawu.yaml
 conda activate mawu
 ```
 
-### Run codes for DirectAU
+### Run commands for DirectAU
 ```
 python run_recbole.py --model=DirectAU --dataset=beauty --encoder=MF --weight_decay=1e-4 --gamma=0.4 &&
 python run_recbole.py --model=DirectAU --dataset=beauty --encoder=LightGCN --weight_decay=1e-4 --gamma=0.4 &&
@@ -22,7 +22,7 @@ python run_recbole.py --model=DirectAU --dataset=yelp --encoder=MF --weight_deca
 python run_recbole.py --model=DirectAU --dataset=yelp --encoder=LightGCN --weight_decay=1e-6 --gamma=2
 ```
 
-### Run codes for MAWU
+### Run commands for MAWU
 ```
 python run_recbole.py --model=MAWU --dataset=beauty --encoder=MF --weight_decay=1e-4 --gamma1=1 --gamma2=0.1 &&
 python run_recbole.py --model=MAWU --dataset=beauty --encoder=LightGCN --weight_decay=1e-4 --gamma1=0.9 --gamma2=0.2 &&
